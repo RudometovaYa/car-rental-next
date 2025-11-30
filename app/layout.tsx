@@ -10,8 +10,6 @@ const manropeFont = Manrope({
   weight: ['500', '700'],
 });
 
-export const metadataBase = new URL('https://car-rental-next-three.vercel.app');
-
 export const metadata: Metadata = {
   title: 'Car Rental | Find your perfect car',
   description:
