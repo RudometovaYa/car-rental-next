@@ -6,14 +6,12 @@ import css from './CarDetails.module.css';
 import CarDetails from './CarDetails';
 import BookingForm from '@/components/BookingForm/BookingForm';
 
-interface CarDetailsPageProps {
-  params: {
-    id: string;
-  };
-}
+type CarDetailsPageProps = {
+  params: Promise<{ id: string }>;
+};
 
 export default async function CarDetailsPage({ params }: CarDetailsPageProps) {
-  const { id } = params;
+  const { id } = await params;
 
   let car: Car | null = null;
 
