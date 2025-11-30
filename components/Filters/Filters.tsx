@@ -90,7 +90,7 @@ export default function Filters() {
             className={css.customSelectInput}
             onClick={() => setPriceDropdownOpen((prev) => !prev)}
           >
-            <span>{price || 'Choose a price'}</span>
+            <span>{price ? `To $${price}` : 'Choose a price'}</span>
             <svg
               className={css.selectIcon}
               aria-hidden="true"
