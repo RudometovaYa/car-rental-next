@@ -29,7 +29,6 @@ export default function CatalogPage() {
 
   return (
     <div className={css.page}>
-      <h1 className={css.title}>Car Catalog</h1>
       <Filters />
       {loading && cars.length === 0 && <Loader />}
       {error && <ErrorMessage message={error} />}

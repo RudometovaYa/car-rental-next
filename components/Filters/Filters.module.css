@@ -1,9 +1,11 @@
 .container {
   display: flex;
+  justify-content: center;
   align-items: flex-end;
-  gap: 16px; /* відступ між полями */
-  margin-bottom: 24px;
-  flex-wrap: wrap; /* щоб на мобільних красиво переносилось */
+  gap: 16px;
+  margin-top: 84px;
+  margin-bottom: 56px;
+  flex-wrap: wrap;
 }
 
 .field {
@@ -25,9 +27,9 @@
 }
 
 .selectWrapper {
-  display: flexbox;
+  display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 32 px;
 }
 
 .mileageWrapper {
@@ -84,9 +86,8 @@
   border-radius: 12px;
   border: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  border-radius: 8px;
   cursor: pointer;
   width: 204px;
   height: 44px;
@@ -98,6 +99,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  box-sizing: border-box;
 }
 
 .optionsList {
@@ -129,4 +131,13 @@
 
 .option:hover {
   color: #101828;
+}
+
+.customSelectInput > span {
+  flex: 0 1 auto;
+  max-width: calc(100% - 32px);
+}
+
+.selectIcon {
+  margin-left: 32px;
 }
