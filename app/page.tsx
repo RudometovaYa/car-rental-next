@@ -1,22 +1,21 @@
+'use client';
 import css from './page.module.css';
+import Link from 'next/link';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
-      <div className={css.container}>
-        <h1 className={css.title}>Welcome to NoteHub</h1>
-        <p className={css.description}>
-          NoteHub is a simple and efficient application designed for managing
-          personal notes. It helps keep your thoughts organized and accessible
-          in one place, whether you are at home or on the go.
+    <section className={css.container}>
+      <div className={css.hero}>
+        <h1 className={css.heroTitle}>Find your perfect rental car</h1>
+        <p className={css.heroSubtitle}>
+          Reliable and budget-friendly rentals for any journey
         </p>
-        <p className={css.description}>
-          The app provides a clean interface for writing, editing, and browsing
-          notes. With support for keyword search and structured organization,
-          NoteHub offers a streamlined experience for anyone who values clarity
-          and productivity.
-        </p>
+        <button className={css.heroViewButton}>
+          <Link href="/catalog" className={css.heroViewButtonText}>
+            View Catalog
+          </Link>
+        </button>
       </div>
-    </main>
+    </section>
   );
 }

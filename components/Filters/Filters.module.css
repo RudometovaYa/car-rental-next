@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px; /* відступ між полями */
+  margin-bottom: 24px;
+  flex-wrap: wrap; /* щоб на мобільних красиво переносилось */
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  position: relative;
+  gap: 8px;
+}
+
+.label {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+
+  line-height: 16px;
+  line-height: 133%;
+  color: #8d929a;
+}
+
+.selectWrapper {
+  display: flexbox;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.mileageWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mileageField {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.mileageFieldsRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.button {
+  background: #3470ff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 12px 51px;
+  width: 156px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 20px;
+  font-family: 'Manrope', sans-serif;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+/* це додаткові  */
+
+.customSelectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.customSelectInput {
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 204px;
+  height: 44px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: #f7f7f7;
+
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.optionsList {
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  border: 1px solid #f7f7f7;
+  box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.02);
+  background: #fff;
+
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d929a;
+}
+
+.option {
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.option:hover {
+  color: #101828;
+}

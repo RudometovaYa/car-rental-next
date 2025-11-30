@@ -1,37 +1,41 @@
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
+
+  padding: 0 120px;
+  background-color: #f2f4f7;
+  border-bottom: 1px solid #f2f4f7;
 }
 
-.header a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
+.logoSvg {
+  width: 104px;
+  height: 16px;
+  display: block;
 }
 
-.header a:hover {
-  color: #ddd;
-}
-
-.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.nav {
   display: flex;
-  gap: 1rem;
+  gap: 32px;
+  align-items: center;
+  margin-left: auto;
 }
 
-.navigation li a {
+.navLink {
   text-decoration: none;
-  color: white;
-  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Manrope', sans-serif;
+  line-height: 20px;
+  text-align: center;
+  color: #101828;
 }
 
-.navigation li a:hover {
-  color: #ddd;
+.navLink:hover {
+  color: #0b44cd;
+}
+
+.navLink.active {
+  color: #0b44cd;
 }

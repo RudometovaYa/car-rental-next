@@ -1,0 +1,36 @@
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 120px 40px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.loadMoreWrapper {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.infoText {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.errorText {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #d32f2f;
+}
