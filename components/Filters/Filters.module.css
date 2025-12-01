@@ -48,12 +48,44 @@
   flex-direction: row;
 }
 
-.input {
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.mileageField {
+  flex: 0 0 auto;
 }
 
+.input {
+  width: 160px;
+  height: 44px;
+  padding: 8px 12px;
+  border: none;
+  background: #f7f7f7;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputLeft {
+  border-radius: 12px 0 0 12px;
+  border-right: 1px solid #dadde1;
+}
+
+.inputRight {
+  border-radius: 0 12px 12px 0;
+  border-left: none;
+}
+
+.mileageField + .mileageField {
+  margin-left: 1px;
+}
+
+.mileageFieldsRow .input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 20px;
+
+  color: #101828;
+  font-family: 'Manrope', sans-serif;
+}
 .button {
   background: #3470ff;
   border: none;

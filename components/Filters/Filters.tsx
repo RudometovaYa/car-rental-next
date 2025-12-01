@@ -133,7 +133,7 @@ export default function Filters() {
         <div className={css.mileageFieldsRow}>
           <div className={css.mileageField}>
             <input
-              className={css.input}
+              className={`${css.input} ${css.inputLeft}`}
               type="number"
               value={mileageFrom}
               onChange={(e) => setMileageFrom(e.target.value)}
@@ -142,7 +142,7 @@ export default function Filters() {
           </div>
           <div className={css.mileageField}>
             <input
-              className={css.input}
+              className={`${css.input} ${css.inputRight}`}
               type="number"
               value={mileageTo}
               onChange={(e) => setMileageTo(e.target.value)}
