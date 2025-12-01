@@ -1,74 +1,86 @@
+.input,
+.textarea {
+  box-sizing: border-box;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  background-color: #f9f9f9; /* легкий фон */
-  padding: 24px;
-  border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  background-color: transparent;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  padding: 32px;
 }
 
 .title {
-  font-size: 22px;
-  font-weight: 700;
-  margin: 0;
-  color: #222;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Manrope', sans-serif;
+  line-height: 24px;
+
+  color: #101828;
 }
 
 .subtitle {
-  font-size: 14px;
-  color: #555;
-  margin: 0 0 12px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8d929a;
 }
 
 .input,
 .textarea {
   width: 100%;
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: none;
   font-size: 14px;
   outline: none;
   transition: border-color 0.2s;
-}
+  background: #f7f7f7;
 
-.input:focus,
-.textarea:focus {
-  border-color: #0070f3;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 20px;
+
+  color: #8d929a;
 }
 
 .textarea {
   resize: vertical;
-  min-height: 80px;
+  min-height: 88px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .button {
-  background-color: #0070f3;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px 0;
   border: none;
-  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s;
+
+  background: #3470ff;
+  border-radius: 12px;
+  padding: 12px 51px;
+  width: 156px;
+  height: 44px;
+
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 20px;
+
+  color: #fff;
+  margin-top: 24px;
+  align-self: center;
 }
 
 .button:hover {
   background-color: #005bb5;
-}
-
-/* Адаптив для мобільних */
-@media (max-width: 768px) {
-  .form {
-    padding: 16px;
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .subtitle {
-    font-size: 13px;
-  }
 }

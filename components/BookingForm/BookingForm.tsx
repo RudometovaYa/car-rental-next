@@ -49,48 +49,48 @@ export default function BookingForm() {
     <form className={css.form} onSubmit={handleSubmit}>
       <h2 className={css.title}>Book your car now Stay connected!</h2>
       <p className={css.subtitle}>We are always ready to help you</p>
+      <div className={css.inputWrapper}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Name*"
+          value={formData.name}
+          onChange={handleChange}
+          className={css.input}
+          required
+          disabled={loading}
+        />
 
-      <input
-        type="text"
-        name="name"
-        placeholder="Name*"
-        value={formData.name}
-        onChange={handleChange}
-        className={css.input}
-        required
-        disabled={loading}
-      />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email*"
+          value={formData.email}
+          onChange={handleChange}
+          className={css.input}
+          required
+          disabled={loading}
+        />
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Email*"
-        value={formData.email}
-        onChange={handleChange}
-        className={css.input}
-        required
-        disabled={loading}
-      />
+        <input
+          type="date"
+          name="bookingDate"
+          placeholder="Booking date"
+          value={formData.bookingDate}
+          onChange={handleChange}
+          className={css.input}
+          disabled={loading}
+        />
 
-      <input
-        type="date"
-        name="bookingDate"
-        placeholder="Booking date"
-        value={formData.bookingDate}
-        onChange={handleChange}
-        className={css.input}
-        disabled={loading}
-      />
-
-      <textarea
-        name="comment"
-        placeholder="Comment"
-        value={formData.comment}
-        onChange={handleChange}
-        className={css.textarea}
-        disabled={loading}
-      />
-
+        <textarea
+          name="comment"
+          placeholder="Comment"
+          value={formData.comment}
+          onChange={handleChange}
+          className={css.textarea}
+          disabled={loading}
+        />
+      </div>
       <button type="submit" className={css.button} disabled={loading}>
         {loading ? <Loader /> : 'Send'}
       </button>
