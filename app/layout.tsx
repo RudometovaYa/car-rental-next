@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={manropeFont.variable}>
+    <html lang="en" className={manropeFont.variable}>
+      <body>
         <TanStackProvider>
           <div className="layout">
             <Header />

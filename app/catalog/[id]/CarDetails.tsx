@@ -21,19 +21,24 @@ export default function CarDetails({ car }: CarDetailsProps) {
 
   return (
     <div className={css.rightColumn}>
-      <h1 className={css.title}>
+      <p className={css.title}>
         {car.brand} {car.model}, {car.year}
-      </h1>
+        <span className={css.idChip}>id: {car.id.slice(0, 4)}</span>
+      </p>
 
       <div className={css.mainInfo}>
-        <span>ID: {car.id}</span>
-        <span>{cityCountry}</span>
-        <span>Rental company: {car.rentalCompany}</span>
+        <span className={css.location}>
+          <svg className={css.locationIcon} aria-hidden="true">
+            <use href="/symbol-defs.svg#icon-location" />
+          </svg>
+          {cityCountry}
+        </span>
+
+        <span className={css.mileage}>Mileage: {mileageFormatted}</span>
       </div>
 
       <div className={css.priceMileage}>
         <span className={css.price}>{priceFormatted}</span>
-        <span className={css.mileage}>Mileage: {mileageFormatted}</span>
       </div>
 
       <p className={css.description}>{car.description}</p>
@@ -43,6 +48,9 @@ export default function CarDetails({ car }: CarDetailsProps) {
         <ul className={css.chipsList}>
           {car.rentalConditions.map((cond) => (
             <li key={cond} className={css.chip}>
+              <svg className={css.chipIcon} aria-hidden="true">
+                <use href="/symbol-defs.svg#icon-check-circle" />
+              </svg>
               {cond}
             </li>
           ))}
@@ -53,16 +61,28 @@ export default function CarDetails({ car }: CarDetailsProps) {
         <h2 className={css.sectionTitle}>Car Specifications</h2>
         <ul className={css.specsList}>
           <li>
-            <span>Year:</span> <span>{car.year}</span>
+            <svg className={css.specIcon} aria-hidden="true">
+              <use href="/symbol-defs.svg#icon-calendar" />
+            </svg>
+            <span>Year: {car.year}</span>
           </li>
           <li>
-            <span>Type:</span> <span>{car.type}</span>
+            <svg className={css.specIcon} aria-hidden="true">
+              <use href="/symbol-defs.svg#icon-car" />
+            </svg>
+            <span>Type: {car.type}</span>
           </li>
           <li>
-            <span>Fuel Consumption:</span> <span>{car.fuelConsumption}</span>
+            <svg className={css.specIcon} aria-hidden="true">
+              <use href="/symbol-defs.svg#icon-furl-pump" />
+            </svg>
+            <span>Fuel Consumption: {car.fuelConsumption}</span>
           </li>
           <li>
-            <span>Engine Size:</span> <span>{car.engineSize}</span>
+            <svg className={css.specIcon} aria-hidden="true">
+              <use href="/symbol-defs.svg#icon-gear" />
+            </svg>
+            <span>Engine Size: {car.engineSize}</span>
           </li>
         </ul>
       </section>
@@ -72,11 +92,25 @@ export default function CarDetails({ car }: CarDetailsProps) {
         <ul className={css.chipsList}>
           {allFeatures.map((item) => (
             <li key={item} className={css.chip}>
+              <svg className={css.chipIcon} aria-hidden="true">
+                <use href="/symbol-defs.svg#icon-check-circle" />
+              </svg>
               {item}
             </li>
           ))}
         </ul>
       </section>
+
+      {/*  <section className={css.section}>
+        <h2 className={css.sectionTitle}>Accessories & functionalities</h2>
+        <ul className={css.chipsList}>
+          {allFeatures.map((item) => (
+            <li key={item} className={css.chip}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section> */}
     </div>
   );
 }
