@@ -100,17 +100,6 @@ export default function CarDetails({ car }: CarDetailsProps) {
           ))}
         </ul>
       </section>
-
-      {/*  <section className={css.section}>
-        <h2 className={css.sectionTitle}>Accessories & functionalities</h2>
-        <ul className={css.chipsList}>
-          {allFeatures.map((item) => (
-            <li key={item} className={css.chip}>
-              {item}
-            </li>
-          ))}
-        </ul>
-      </section> */}
     </div>
   );
 }

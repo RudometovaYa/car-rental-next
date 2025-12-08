@@ -30,18 +30,24 @@ export default function CatalogPage() {
   return (
     <div className={css.page}>
       <Filters />
+
       {loading && cars.length === 0 && <Loader />}
       {error && <ErrorMessage message={error} />}
-      <div className={css.grid}>
+
+      <ul className={css.grid}>
         {cars.map((car) => (
-          <CarCard key={car.id} car={car} />
+          <li key={car.id} className={css.gridItem}>
+            <CarCard car={car} />
+          </li>
         ))}
-      </div>
+      </ul>
+
       {cars.length > 0 && page < totalPages && (
         <div className={css.loadMoreWrapper}>
           <LoadMoreButton onClick={handleLoadMore} loading={loading} />
         </div>
       )}
+
       {!loading && cars.length === 0 && !error && (
         <p className={css.infoText}>No cars found.</p>
       )}
