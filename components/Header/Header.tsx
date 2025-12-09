@@ -39,28 +39,3 @@ export default function Header() {
     </header>
   );
 }
-/* 'use client';
-
-import Link from 'next/link';
-import css from './Header.module.css';
-
-export default function Header() {
-  return (
-    <header className={css.header}>
-      <Link href="/" aria-label="Home">
-        <div className={css.logo}>
-          Rental<span className={css.logospan}>Car</span>
-        </div>
-      </Link>
-
-      <nav className={css.nav}>
-        <Link href="/" className={css.navLink}>
-          Home
-        </Link>
-        <Link href="/catalog">
-          <button className={css.catalogButton}>Catalog</button>
-        </Link>
-      </nav>
-    </header>
-  );
-} */

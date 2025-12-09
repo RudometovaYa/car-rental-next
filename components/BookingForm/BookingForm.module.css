@@ -51,6 +51,7 @@
 .textarea {
   resize: vertical;
   min-height: 88px;
+  resize: none;
 }
 
 .inputWrapper {
