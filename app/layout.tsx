@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Manrope, Inter } from 'next/font/google';
 import Header from '@/components/Header/Header';
 import TanStackProvider from '@/components/TanStackProvider/TanStackProvider';
+import './globals.css';
 
 const manrope = Manrope({
   subsets: ['latin'],

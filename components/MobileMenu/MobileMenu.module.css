@@ -1,0 +1,56 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  gap: 32px;
+  position: relative;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoSvg {
+  display: block;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menuNav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.navLink.active {
+  color: #3470ff;
+}
