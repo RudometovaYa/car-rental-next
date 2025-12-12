@@ -9,7 +9,7 @@
   margin: 0;
 
   display: grid;
-  grid-template-columns: 1fr; /* 1 картка в ряд */
+  grid-template-columns: 1fr;
   gap: 24px;
   width: 100%;
 }

@@ -16,9 +16,7 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  /*  padding: 24px 16px; */
   gap: 32px;
-  /* position: relative; */
 }
 
 .menuHeader {
@@ -28,7 +26,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 24px 16px;
-  background-color: aquamarine;
+  background-color: #f2f4f7;
   border-bottom: 1px solid #f2f4f7;
   box-sizing: border-box;
 }
@@ -43,20 +41,20 @@
   cursor: pointer;
   padding: 0;
 
-  display: flex; /* 🔥 додано */
-  align-items: center; /* 🔥 додано */
-  justify-content: center; /* 🔥 додано */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 24px; /* необов’язково, але дає стабільну зону кліку */
+  width: 24px;
   height: 24px;
 
-  margin: 0; /* якщо треба */
-  cursor: pointer; /* змінює курсор на pointer */
+  margin: 0;
+  cursor: pointer;
 }
 .closeButton svg {
   width: 24px;
   height: 24px;
-  display: block; /* 🔥 перестає стрибати */
+  display: block;
   fill: #000;
 }
 .menuNav {

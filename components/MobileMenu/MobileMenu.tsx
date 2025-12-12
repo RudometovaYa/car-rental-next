@@ -14,12 +14,11 @@ export default function MobileMenu({
   onClose,
   pathname,
 }: MobileMenuProps) {
-  if (!isOpen) return null; // меню не рендериться, якщо закрите
+  if (!isOpen) return null;
 
   return (
     <div className={css.overlay}>
       <div className={css.menu}>
-        {/* Хедер меню: логотип + крестик */}
         <div className={css.menuHeader}>
           <Link href="/" aria-label="Home">
             <svg
@@ -43,7 +42,6 @@ export default function MobileMenu({
           </button>
         </div>
 
-        {/* Навігація */}
         <nav className={css.menuNav}>
           <Link
             href="/"

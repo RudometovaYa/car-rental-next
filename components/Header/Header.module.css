@@ -1,33 +1,33 @@
 .header {
-  width: 100%; /* хедер на всю ширину */
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* логотип ліворуч, навігація праворуч */
-  padding: 24px 16px; /* базовий горизонтальний падінг для мобільних */
-  background-color: aquamarine;
+  justify-content: space-between;
+  padding: 24px 16px;
+  background-color: #f2f4f7;
   border-bottom: 1px solid #f2f4f7;
-  box-sizing: border-box; /* щоб падінги не додавали ширину */
+  box-sizing: border-box;
 }
 .nav {
   display: none;
 }
 .burgerButton {
-  background: none; /* прибирає фон */
-  border: none; /* прибирає рамку */
-  padding: 0; /* прибирає внутрішні відступи */
-  margin: 0; /* якщо треба */
-  cursor: pointer; /* змінює курсор на pointer */
-  display: flex; /* щоб svg центрувався, якщо потрібно */
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 24px; /* стабільна зона кліку */
+  width: 24px;
   height: 24px;
 }
 .burgerButton svg {
   width: 24px;
   height: 24px;
-  display: block; /* 🔥 прибирає стрибки */
+  display: block;
   fill: #101828;
 }
 
@@ -41,8 +41,8 @@
     align-items: center;
 
     padding: 24px 80px;
-    background-color: aquamarine;
-    /*  background-color: #f2f4f7; */
+    background-color: #f2f4f7;
+
     border-bottom: 1px solid #f2f4f7;
   }
 
