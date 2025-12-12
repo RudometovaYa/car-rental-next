@@ -20,6 +20,15 @@
   display: flex; /* щоб svg центрувався, якщо потрібно */
   align-items: center;
   justify-content: center;
+
+  width: 24px; /* стабільна зона кліку */
+  height: 24px;
+}
+.burgerButton svg {
+  width: 24px;
+  height: 24px;
+  display: block; /* 🔥 прибирає стрибки */
+  fill: #101828;
 }
 
 @media only screen and (min-width: 768px) {

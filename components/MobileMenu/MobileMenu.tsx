@@ -38,7 +38,7 @@ export default function MobileMenu({
             aria-label="Close menu"
           >
             <svg width="16" height="16" viewBox="0 0 24 24">
-              <use xlinkHref="/symbol-defs.svg#icon-cross" />
+              <use xlinkHref="/symbol-defs.svg#icon-close" />
             </svg>
           </button>
         </div>

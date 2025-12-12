@@ -11,20 +11,26 @@
 }
 
 .menu {
-  width: 250px;
+  width: 100%;
   height: 100%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 24px 16px;
+  /*  padding: 24px 16px; */
   gap: 32px;
-  position: relative;
+  /* position: relative; */
 }
 
 .menuHeader {
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 16px;
+  background-color: aquamarine;
+  border-bottom: 1px solid #f2f4f7;
+  box-sizing: border-box;
 }
 
 .logoSvg {
@@ -36,12 +42,28 @@
   border: none;
   cursor: pointer;
   padding: 0;
-}
 
+  display: flex; /* 🔥 додано */
+  align-items: center; /* 🔥 додано */
+  justify-content: center; /* 🔥 додано */
+
+  width: 24px; /* необов’язково, але дає стабільну зону кліку */
+  height: 24px;
+
+  margin: 0; /* якщо треба */
+  cursor: pointer; /* змінює курсор на pointer */
+}
+.closeButton svg {
+  width: 24px;
+  height: 24px;
+  display: block; /* 🔥 перестає стрибати */
+  fill: #000;
+}
 .menuNav {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 24px 16px;
 }
 
 .navLink {

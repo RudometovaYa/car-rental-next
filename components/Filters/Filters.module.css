@@ -3,8 +3,10 @@
   justify-content: center;
   align-items: flex-end;
   gap: 16px;
-  margin-top: 84px;
-  margin-bottom: 56px;
+  margin-top: 42px;
+  margin-bottom: 32px;
+  /* margin-top: 84px;
+  margin-bottom: 56px; */
   flex-wrap: wrap;
 }
 
@@ -170,4 +172,18 @@
 
 .selectIcon {
   margin-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-top: 63px;
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    margin-top: 84px;
+    margin-bottom: 56px;
+  }
 }
